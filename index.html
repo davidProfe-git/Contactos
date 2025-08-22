@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contactos - Login</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>hola este es mi commit</h1>
-    <h2>este es mi clon</h2>
-    <p>estamos en la rama desarrollo</p>
+<body class="grey lighten-4">
+    <div class="container">
+        <div class="row" style="margin-top: 8vh;">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title center-align">
+                            <i class="material-icons large blue-text text-darken-2">person</i>
+                            <br>Iniciar Sesión
+                        </span>
+                        <form>
+                            <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="name" type="text" class="validate" required>
+                                <label for="name">Usuario</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">lock</i>
+                                <input id="pass" type="password" class="validate" required>
+                                <label for="pass">Contraseña</label>
+                            </div>
+                            <div class="center-align" style="margin-top: 30px;">
+                                <button class="btn waves-effect waves-light blue darken-2" type="submit">
+                                    Entrar
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
