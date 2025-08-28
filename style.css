@@ -1,3 +1,26 @@
 *{
-background-color:rgb(89, 87, 192);
+background-color:rgb(172, 172, 185);
+}
+section{
+    width: 50%;
+}
+div {
+    border: 1px solid black;
+    border-radius: 3% ;
+    padding: 10px;
+    background-color: rgb(27, 76, 184);
+    color: white;
+    box-shadow: 0,00% 10px rgb(195, 196, 195);
+}
+div  p{
+    background-color: transparent;
+}
+strong{
+    font-family: arial;
+    background-color: transparent;
+}
+img{
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
 }
