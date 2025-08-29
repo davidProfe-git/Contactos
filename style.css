@@ -1,3 +1,25 @@
 *{
-background-color:rgb(89, 87, 192);
+background-color:rgb(0, 0, 0);
+color: wheat;
+}
+
+.Padre{
+    background-color: rgb(49, 50, 51);
+    box-shadow: rgb(75, 73, 73);
+    width: 230px;
+    height:200px ;
+    display:inline-block;
+    margin-left: 20%;
+}
+.hijo{
+    background-color: rgb(49, 51, 53);
+    box-shadow: rgb(202, 200, 200);
+     width: 200px;
+    height:100px;
+    margin-left:10%;
+    border-radius: 50%;
+}
+
+div img {
+    border-radius: 50%;
 }
