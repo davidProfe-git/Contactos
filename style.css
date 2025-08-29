@@ -1,17 +1,18 @@
 *{
-background-color:rgb(188, 187, 214);
+    background-color:rgb(231, 231, 237);
 }
 section{
     width: 50%;
+    display: flex; 
 }
 
 .tarjeta{
-
+    margin: 5%;
     border-radius:3%;
     padding: 15px;
     background-color: rgb(31, 55, 101);
     color: white;
-   box-shadow: 10px 5px 5px rgb(113, 113, 113);
+    box-shadow: 10px 5px 5px rgb(113, 113, 113);
 }
 div p{
     background-color: transparent;
@@ -25,4 +26,6 @@ img{
     height: 180px;
     border-radius: 60%;
 }
+
+
 
