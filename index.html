@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<body>
+
+
+  <meta charset="UTF-8">
+  <title>Tarjeta de Identidad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 350px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #333;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      margin: 5px 0;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h1>hola este es mi commit</h1>
-    <h2>este es mi clon</h2>
-    <p>estamos en la rama desarrollo</p>
+  <div class="card">
+    <img src="imagen/sss.jpg" alt="Foto de perfil">
+    <h2>Alejandra Morales</h2>
+    <p><span class="label">ID:</span> 873878393939ss</p>
+    <p><span class="label">Fecha de nacimiento:</span> 15/04/1995</p>
+    <p><span class="label">Dirección:</span> Calle Verdadero 123, Bogota  Dc</p>
+  </div>
+
+
+
 </body>
 </html>
