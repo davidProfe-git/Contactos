@@ -1,18 +1,20 @@
 *{
-background-color:rgb(0, 0, 0);
-color: wheat;
+background-color:rgb(255, 255, 255);
+color: rgb(2, 1, 0);
 }
 
 .Padre{
-    background-color: rgb(49, 50, 51);
-    box-shadow: rgb(75, 73, 73);
+    background-color: rgb(217, 217, 221);
+    box-shadow: rgb(148, 146, 146);
     width: 230px;
     height:200px ;
     display:inline-block;
     margin-left: 20%;
+    border: 1px solid black;
+
 }
 .hijo{
-    background-color: rgb(49, 51, 53);
+    background-color: rgb(171, 174, 177);
     box-shadow: rgb(202, 200, 200);
      width: 200px;
     height:100px;
