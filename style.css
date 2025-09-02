@@ -5,4 +5,7 @@ img{
     width: 200px;
     height: 200px;
     border-radius: 110%;
+    
+border: yellowgreen 0.2px solid;
+;
 }
