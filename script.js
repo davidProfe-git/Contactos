@@ -1,40 +1,33 @@
-//sintaxis basica
+let opcion = prompt("Vamos a jugar piedra✊, papel🧻 o tijera ✂️")
+let PC = 
 
-//tipos de datos nativos
-let texto = "texto"
-let entero = 5 //number
-let decimal = 5.4 //number
-let objeto = {nombre: "david"}
-let indefinido
-let nulo = null
-let booleano = true || false
-
-
-// console.log(typeof(texto))
-// console.log(typeof(entero))
-// console.log(typeof(decimal))
-
-//variables y constantes
-let numero1 
-let numero2
-numero1 = parseInt(prompt("¿dame un numero 1?"))
-numero2 = parseInt(prompt("¿dame un numero 2?"))
+if((opcion == "✊" && PC == "✂️")
+   || (opcion == "🧻" && PC == "✊")
+   || (opcion == "✂️" && PC == "🧻"))
+   {
+    alert("ganaste!!!🎉🎉✌️")
+   }else if(opcion == PC){
+    alert("Empataste!!!")
+   }else{
+    alert("perdiste!!!🏴‍☠️")
+   }
 
 
 
-//estructuras de control
- if(numero1 > numero2)
-    {
-        alert("el numero mayor es: "+ numero1)
- }
- else if(numero1 === numero2)
-    {
-    alert("son iguales")
- }
- else{
-    alert("numero mayor es: "+ numero2)
- }
- 
+
+
+
+
+
+// if(opcion == PC){
+//   alert("Empate!!!")
+// }else if(opcion == "✊" ){
+//   alert("Ganaste!!!🎉")
+// }else if(opcion == "🧻"){
+//   alert("perdiste")
+// }else{
+//   alert("Esta loco hp?!!")
+// }
 
 
 
