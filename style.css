@@ -1,3 +1,51 @@
+<<<<<<< Updated upstream
 *{
 background-color:rgb(89, 87, 192);
 }
+=======
+body { 
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    text-align: center;
+ }
+
+    .usuarios { display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 1rem;
+     }
+    .card {
+      background: white;
+
+      border-radius: 10px;
+
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+      padding: 1rem;
+
+      width: 200px;
+
+      text-align: center;
+
+    }
+    img { border-radius: 50%;
+     }
+    button {
+      margin: 1rem;
+
+      padding: 0.5rem 1rem;
+
+      background: #007bff;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 5px;
+
+      cursor: pointer;
+
+    }
+    button:hover { background: #0056b3;
+     }
+>>>>>>> Stashed changes
