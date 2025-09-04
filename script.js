@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
   function cargarUsuarios() {
       fetch("https://randomuser.me/api/?results=6&nat=us,es")
       .then(res => res.json())
@@ -21,4 +19,3 @@
         })
         .catch(err => console.error("Error al traer usuarios:", err));
     }
->>>>>>> Stashed changes
