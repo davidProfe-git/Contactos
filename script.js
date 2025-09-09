@@ -1,18 +1,24 @@
-let numero1
-let numero2
-numero1=parseInt (prompt("cual es tu numero"))
-numero2=parseInt (prompt( "cual es tu numero"))
 
-if (numero1> numero2)
-{
-    alert("el numero mayor es:" + numero1)
+let jugador = prompt ("vamos a jugar  0-Piedra, 1-Papel, 2-Tijera")
+let min = 1
+let max = 3
+let pc = Math.floor(Math.random() * (max-min+1)+min)
+
+
+if (pc == 1){
+    alert ("El pc escoje piedra" )
     
-
-    }else if(numero1 === numero2)
-    {  
-        alert("los numeros son iguales")
-
-} else{
-    alert("el numero mayor es:" + numero2)
-    
+}
+if (pc == 2){
+    alert ("El pc escoje papel" )
+}
+if (pc == 3){
+    alert ("El pc escoje tijera" )
+}
+if (jugador == pc){
+    alert ("empate")
+}   else if ((jugador == 1 && pc == 2) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2)){
+    alert ("ganaste")
+}else {
+    alert ("escojar una opcion valida - perdiste")
 }
