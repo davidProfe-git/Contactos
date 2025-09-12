@@ -1,6 +1,8 @@
 let opciones = prompt ("JUGUEMOS PIEDRA (1) PAPEL (2) O TIJERA (3)")
 let min = 1
 let max = 3
+let puntajeJ = 0
+let puntajePC = 0   
 
 let pc = Math.floor(Math.random() * (max - min + 1) + min) 
 
@@ -31,15 +33,16 @@ if (opciones == pc) {
 }
 
 
-if (opciones <= 2) {
-
-    let opciones = prompt ("sigamos jugando-> PIEDRA (1) PAPEL (2) O TIJERA (3)"  )
-    let min = 1
-    let max = 3 
-    alert ("sigue jugando")
+while (puntajeJ < 3 && puntajePC < 3) {
+   let opciones = prompt ("JUGUEMOS PIEDRA (1) PAPEL (2) O TIJERA (3)")
 
 
-    if (pc == 1) {
+let pc = Math.floor(Math.random() * (max - min + 1) + min) 
+
+
+   
+
+if (pc == 1) {
    alert ( "pc escoje piedra")
 }
 if (pc == 2) {
@@ -50,7 +53,7 @@ if (pc == 3) {
     alert ("pc escoje tijera")
 }   
 
-    if (opciones == pc) {
+if (opciones == pc) {
  alert ("EMPATE")
 }   else if (opciones == 2 && pc == 1){ 
     alert ("ganaste")  
@@ -61,11 +64,7 @@ if (pc == 3) {
 }else{
     alert ("eliga algo hpta")
 }
-}   else {
-    alert ("fin del juego")
-}    
-
-
+}
 
 // const tarjeta = document.getElementById("Padre");
 
