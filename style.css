@@ -3,7 +3,26 @@ background-color:rgb(255, 255, 255);
 color: rgb(2, 1, 0);
 }
 
-.Padre{
+#Padre{
+    background-color: rgb(217, 217, 221);
+    box-shadow: rgb(148, 146, 146);
+    width: 230px;
+    height:230px ;
+    display:inline-block;
+    margin-left: 20%;
+    border: 1px solid black;
+
+}
+#hijo{
+    background-color: rgb(171, 174, 177);
+    box-shadow: rgb(202, 200, 200);
+     width: 200px;
+    height:100px;
+    margin-left:10%;
+    border-radius: 50%;
+}
+
+#Padre2{
     background-color: rgb(217, 217, 221);
     box-shadow: rgb(148, 146, 146);
     width: 230px;
@@ -13,7 +32,7 @@ color: rgb(2, 1, 0);
     border: 1px solid black;
 
 }
-.hijo{
+#hijo2{
     background-color: rgb(171, 174, 177);
     box-shadow: rgb(202, 200, 200);
      width: 200px;
