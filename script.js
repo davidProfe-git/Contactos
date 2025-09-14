@@ -20,9 +20,9 @@ while (puntajeJ < 3 && puntajePC < 3) {
     if (opciones === pc) {
         alert("EMPATE");
     } else if (
-        (opciones === 1 && pc === 3) || // piedra vence tijera
-        (opciones === 2 && pc === 1) || // papel vence piedra
-        (opciones === 3 && pc === 2)    // tijera vence papel
+        (opciones === 1 && pc === 3) || 
+        (opciones === 2 && pc === 1) ||
+        (opciones === 3 && pc === 2)  
     ) {
         alert("Ganaste esta ronda");
         puntajeJ++;
