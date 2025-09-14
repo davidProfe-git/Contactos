@@ -1,69 +1,45 @@
-let opciones = prompt ("JUGUEMOS PIEDRA (1) PAPEL (2) O TIJERA (3)")
-let min = 1
-let max = 3
-let puntajeJ = 0
-let puntajePC = 0   
-
-let pc = Math.floor(Math.random() * (max - min + 1) + min) 
-
-
-   
-
-if (pc == 1) {
-   alert ( "pc escoje piedra")
-}
-if (pc == 2) {
-    alert ("pc escoje papel")
-}
-
-if (pc == 3) {
-    alert ("pc escoje tijera")
-}   
-
-if (opciones == pc) {
- alert ("EMPATE")
-}   else if (opciones == 2 && pc == 1){ 
-    alert ("ganaste")  
-}else if (opciones == 1 && pc == 2){
-    alert ("perdiste")
-}else if (opciones == 3 && pc == 2){
-    alert ("ganaste")   
-}else{
-    alert ("eliga algo hpta")
-}
-
+let min = 1;
+let max = 3;
+let puntajeJ = 0;
+let puntajePC = 0;
 
 while (puntajeJ < 3 && puntajePC < 3) {
-   let opciones = prompt ("JUGUEMOS PIEDRA (1) PAPEL (2) O TIJERA (3)")
+    let opciones = parseInt(prompt("JUGUEMOS PIEDRA (1), PAPEL (2) O TIJERA (3)"));
+    let pc = Math.floor(Math.random() * (max - min + 1) + min);
 
+    if (pc == 1) {
+        alert("PC escoge piedra");
+    }
+    if (pc == 2) {
+        alert("PC escoge papel");
+    }
+    if (pc == 3) {
+        alert("PC escoge tijera");
+    }
 
-let pc = Math.floor(Math.random() * (max - min + 1) + min) 
+    if (opciones === pc) {
+        alert("EMPATE");
+    } else if (
+        (opciones === 1 && pc === 3) || // piedra vence tijera
+        (opciones === 2 && pc === 1) || // papel vence piedra
+        (opciones === 3 && pc === 2)    // tijera vence papel
+    ) {
+        alert("Ganaste esta ronda");
+        puntajeJ++;
+    } else if (opciones >= 1 && opciones <= 3) {
+        alert("Perdiste esta ronda");
+        puntajePC++;
+    } else {
+        alert("Elige una opción válida (1, 2 o 3)");
+    }
 
-
-   
-
-if (pc == 1) {
-   alert ( "pc escoje piedra")
+    alert(`Marcador: Jugador ${puntajeJ} - PC ${puntajePC}`);
 }
-if (pc == 2) {
-    alert ("pc escoje papel")
-}
 
-if (pc == 3) {
-    alert ("pc escoje tijera")
-}   
-
-if (opciones == pc) {
- alert ("EMPATE")
-}   else if (opciones == 2 && pc == 1){ 
-    alert ("ganaste")  
-}else if (opciones == 1 && pc == 2){
-    alert ("perdiste")
-}else if (opciones == 3 && pc == 2){
-    alert ("ganaste")   
-}else{
-    alert ("eliga algo hpta")
-}
+if (puntajeJ === 3) {
+    alert("¡FELICIDADES! Ganaste el juego 🎉");
+} else {
+    alert("La PC ganó el juego 🧑‍🦳");
 }
 
 // const tarjeta = document.getElementById("Padre");
@@ -128,7 +104,3 @@ if (opciones == pc) {
 //       <p> Tengo rabia</p>
 //      </div>`;
 // }
-
-
-
-
