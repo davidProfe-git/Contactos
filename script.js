@@ -57,38 +57,59 @@
 // //else{
 //  //   alert("Intenta de nuevo")
 // //}
-let victorias_usuario = 0
-let victoria_pc = 0
-let min = 1
-let max = 3
-let partidas = 3 
-let empates = 0
-while ( victorias_usuario < 3 && victoria_pc <  3   )
-  { 
-let opcion = prompt ("Elige una opcion para jugar :  1 Piedra , 2 Papel, 3. Tijera ")
-let pc = Math.floor(Math.random()*(max-min+1)+min)
 
 
-if ((opcion == "1" && pc == 3)
-  ||(opcion == "2" && pc == 1)
-  ||(opcion == "3" && pc == 2))
-  {
-    alert("Ganaste !!!")
-    victorias_usuario += 1
-  }else if(opcion == pc ){
-    alert("Empataste !!!")
-    empates +=1
-  }else{
-    ("Perdiste !!!")
-    victoria_pc += 1
-  }
+
+// let victorias_usuario = 0
+// let victoria_pc = 0
+// let min = 1
+// let max = 3
+// let partidas = 3 
+// let empates = 0
+// while ( victorias_usuario < 3 && victoria_pc <  3   )
+//   { 
+// let opcion = prompt ("Elige una opcion para jugar :  1 Piedra , 2 Papel, 3. Tijera ")
+// let pc = Math.floor(Math.random()*(max-min+1)+min)
 
 
-  }
+// if ((opcion == "1" && pc == 3)
+//   ||(opcion == "2" && pc == 1)
+//   ||(opcion == "3" && pc == 2))
+//   {
+//     alert("Ganaste !!!")
+//     victorias_usuario += 1
+//   }else if(opcion == pc ){
+//     alert("Empataste !!!")
+//     empates +=1
+//   }else{
+//     ("Perdiste !!!")
+//     victoria_pc += 1
+//   }
 
-  if (victorias_usuario > victoria_pc) 
-    {
-      alert ("Ganaste la partida ")
-    }else if(victoria_pc > victorias_usuario){
-      alert ("El pc gano la partida")
-    }
+
+//   }
+
+//   if (victorias_usuario > victoria_pc) 
+//     {
+//       alert ("Ganaste la partida ")
+//     }else if(victoria_pc > victorias_usuario){
+//       alert ("El pc gano la partida")
+//     }
+
+
+fetch("https://randomuser.me/api/?results=5")
+.then(respuesta => respuesta.json() )
+.then(datos => { 
+  const contenedor = document.getElementById("contenedor") 
+  //tarjeta.innerHTML = "" //limpiar datos del html
+  
+  datos.results.forEach(contacto =>{
+        const tarjeta = document.createElement("div")
+        tarjeta.className = "tarjeta"
+        tarjeta.innerHTML = `
+        <img src="${contacto.picture.lage}"/>
+        <p>${contacto.name.first}</p>
+        `
+        contenedor.appendChild(tarjeta)
+  })
+})
