@@ -3,6 +3,7 @@ background-color:rgb(172, 172, 185);
 }
 section{
     width: 50%;
+    gap: 10%;
 }
 div {
     border: 1px solid black;
