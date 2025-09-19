@@ -1,9 +1,9 @@
-*{
-background-color:rgb(255, 255, 255);
-color: rgb(2, 1, 0);
+body {
+background-color: rgb(79, 99, 209);    
+    font-family: Arial, sans-serif;
 }
 
-#Padre{
+/* #Padre{
     background-color: rgb(217, 217, 221);
     box-shadow: rgb(148, 146, 146);
     width: 230px;
@@ -20,27 +20,33 @@ color: rgb(2, 1, 0);
     height:100px;
     margin-left:10%;
     border-radius: 50%;
-}
+} */
 
-#Padre2{
-    background-color: rgb(217, 217, 221);
-    box-shadow: rgb(148, 146, 146);
-    width: 230px;
-    height:200px ;
-    display:inline-block;
-    margin-left: 20%;
-    border: 1px solid black;
+ #Padre2{
+    background-color: rgb(10, 10, 163);
+    box-shadow: rgb(7, 7, 7);
+    display:inline-block; 
+    display: flex;
+    padding: 10px;
+    border: 1px solid black; 
 
-}
-#hijo2{
-    background-color: rgb(171, 174, 177);
+} 
+
+.hijo2{
+    padding: 15px;
+    background-color: rgb(122, 116, 209);
     box-shadow: rgb(202, 200, 200);
-     width: 200px;
-    height:100px;
-    margin-left:10%;
-    border-radius: 50%;
+     width: 280px;
+    height:auto;
+    margin-left:8%;
+    border-radius: 5%;
+    margin-left:20px ;
+   
 }
 
 div img {
     border-radius: 50%;
+    width: 50%;
+    height:50%;
 }
+
