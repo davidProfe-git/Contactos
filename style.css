@@ -3,11 +3,13 @@
 }
 section{
     width: 50%;
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap; 
 }
 
 .tarjeta{
-    margin: 5%;
+    gap:1px;
+    margin: 2%;
     border-radius:3%;
     padding: 15px;
     background-color: rgb(31, 55, 101);
@@ -20,15 +22,12 @@ div p{
 strong {
     font-family: Arial;
     background-color: transparent;
-}
+}ds
 img{
     width: 180px;
     height: 180px;
     border-radius: 60%;
 }
 
-#contacto{
-    background-color: black;
-}
 
 
