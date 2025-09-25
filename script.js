@@ -1,4 +1,4 @@
-fetch("https://randomuser.me/api/?results=5&nat=mx")
+fetch("https://randomuser.me/api/?results=10&nat=mx")
 .then(respuesta => respuesta.json())
 .then(datos => {
   
@@ -14,18 +14,8 @@ fetch("https://randomuser.me/api/?results=5&nat=mx")
     <p>📞${contacto.phone}</p>
     
     `
-
-
-
-
-
     contenedor.appendChild(tarjeta)
-
-
-  }
-
-
-  )
+  })
   
 } )
 
