@@ -2,9 +2,13 @@
     background-color:rgb(231, 231, 237);
 }
 section{
-    width: 50%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap; 
+    justify-content: center;
+    gap: 16px;
 }
 
 .tarjeta{
@@ -15,6 +19,9 @@ section{
     background-color: rgb(31, 55, 101);
     color: white;
     box-shadow: 10px 5px 5px rgb(113, 113, 113);
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: 360px;
+    min-width: 240px;
 }
 
 div p{
@@ -27,10 +34,29 @@ strong {
 }
 
 img{
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
     border-radius: 60%;
 }
 
+@media (max-width: 1024px){
+    .tarjeta{
+        flex: 1 1 calc(50% - 32px);
+        max-width: 420px;
+    }
+}
 
-
+@media (max-width: 600px){
+    section{
+        padding: 0 12px;
+    }
+    .tarjeta{
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 8px 0;
+    }
+    img{
+        max-width: 120px;
+    }
+}
