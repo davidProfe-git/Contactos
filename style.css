@@ -16,13 +16,16 @@ section{
     color: white;
     box-shadow: 10px 5px 5px rgb(113, 113, 113);
 }
+
 div p{
     background-color: transparent;
 }
+
 strong {
     font-family: Arial;
     background-color: transparent;
-}ds
+}
+
 img{
     width: 180px;
     height: 180px;
